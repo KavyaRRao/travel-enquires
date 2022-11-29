@@ -1,0 +1,41 @@
+<main class="travel-place-container">
+    <header class="header">
+        <h2>
+            {{place.name}}
+        </h2>
+    </header>
+    <section class="images-container">
+        <section class="main-image">
+            <img class="image" [src]="place.image">
+        </section>
+        <div class="sub-image">
+            <div class="features">
+                <mat-icon>star</mat-icon>
+                Best Care and Service
+            </div>
+            <div class="features">
+                <mat-icon>local_pharmacy</mat-icon>
+                Medical Care
+            </div>
+            <div class="features">
+                <mat-icon>restaurant</mat-icon>
+                Preferred Food
+            </div>
+            <div class="features">
+                <mat-icon>airport_shuttle</mat-icon>
+                Guided Tour
+            </div>
+            <div class="features">
+                <mat-icon>local_library</mat-icon>
+                Reading MAterial
+            </div>
+            <div class="features">
+                <mat-icon>headset</mat-icon>
+                Entertainment
+            </div>
+        </div>
+    </section>
+    <div class="description">
+        {{place.description}}
+    </div>
+</main>

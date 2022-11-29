@@ -1,0 +1,43 @@
+.home-container {
+    background: white;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding-top: 2rem;
+    .headers {
+        margin-left: 2rem;
+        font-family: 'Courier New';
+        display: flex;
+        cursor: pointer;
+        margin-left: 5rem;
+        .logo-container {
+            margin-right: 1rem;
+            .logo {
+                width: 200px;
+                height: 50px;
+            }
+        }
+        .home-button-container {
+            margin-right: 20vw;
+            margin-top: 1rem;
+            cursor: pointer;
+        }
+        .title {
+            font-weight: bold;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 32px;
+        }
+    }
+    .nav-bar-container {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        display: flex;
+    }
+    .main-container {
+        margin-left: 2rem;
+        margin-top: 2rem;
+    }
+}

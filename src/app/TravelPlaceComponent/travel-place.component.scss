@@ -1,0 +1,46 @@
+.travel-place-container {
+    max-height: 80vh;
+    .header {
+        text-align: center;
+        margin-top: 5rem;
+    }
+    .images-container {
+        display: flex;
+    }
+    .main-image {
+        height: 300px;
+        width: 100%;
+    }
+    .body {
+        margin-top: 1rem;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .sub-image {
+        height: 300px;
+        width: 600px;
+        margin: 1rem;
+    }
+    .image {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+    .description {
+        margin: 1rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    .features {
+        color: orangered;
+        height: 16px;
+        margin-bottom: 10px;
+        line-height: 16px;
+    }
+    .mat-icon {
+        font-size: 16px;
+        height: 16px;
+    }
+}

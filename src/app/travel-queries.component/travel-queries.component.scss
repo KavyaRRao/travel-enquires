@@ -1,0 +1,18 @@
+.travel-queries-container {
+    height: 80vh;
+    width: 80vw;
+    .header {
+        text-align: center;
+        margin-top: 5rem;
+    }
+    .body {
+        margin-top: 5rem;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        .description {
+            max-width: 800px;
+        }
+    }
+}

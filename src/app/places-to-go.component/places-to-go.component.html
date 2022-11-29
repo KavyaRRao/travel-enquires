@@ -1,0 +1,21 @@
+<main class="places-to-go-container">
+    <header class="header">
+        <h2>
+            To Reach Your Happiieee Places
+        </h2>
+    </header>
+    <section class="body">
+        <div class="description">
+            <div class="cards">
+                <mat-card class="travel-card" *ngFor="let place of places" (click)="openDialog(place)">
+                    <mat-card-title>
+                        {{place.name}}
+                    </mat-card-title>
+                    <mat-card-content>
+                        <img class="travel-card-image" [src]="place.image">
+                    </mat-card-content>
+                </mat-card>
+            </div>
+        </div>
+    </section>
+</main>

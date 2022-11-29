@@ -1,0 +1,57 @@
+<main class="connect-container">
+    <header class="header">
+        <h2>
+            Contact Us
+        </h2>
+    </header>
+    <section class="body">
+        <div class="description">
+            <div>
+                <form [formGroup]="contactUsFormGroup">
+                    <div>
+                        <mat-form-field class="input-full-width">
+                            <mat-label>Phone Number</mat-label>
+                            <input matInput formControlName="phoneNumber">
+                            <mat-error *ngIf=" contactUsFormGroup.get('phoneNumber')?.hasError('required')">
+                                Please enter a phoneNumber
+                            </mat-error>
+                            <mat-error *ngIf=" contactUsFormGroup.get('phoneNumber')?.hasError('pattern')">
+                                Please enter a valid phoneNumber
+                            </mat-error>
+                        </mat-form-field>
+                    </div>
+                    <div>
+                        <mat-form-field class="input-full-width">
+                            <mat-label>Email</mat-label>
+                            <input matInput formControlName="email">
+                            <mat-error *ngIf="contactUsFormGroup.get('email')?.hasError('required')">
+                                Please enter an email address
+                            </mat-error>
+                            <mat-error *ngIf="contactUsFormGroup.get('email')?.hasError('email') && !contactUsFormGroup.get('email')?.hasError('required')">
+                                Please enter a valid email address
+                            </mat-error>
+                        </mat-form-field>
+                    </div>
+                    <div>
+                        <mat-form-field class="input-full-width">
+                            <mat-label>Message</mat-label>
+                            <textarea matInput formControlName="message"></textarea>
+                            <mat-error *ngIf="contactUsFormGroup.get('message')?.hasError('required')">
+                                Please enter a message
+                            </mat-error>
+                        </mat-form-field>
+                    </div>
+                    <div>
+                        <button mat-raised-button color="primary" (click)="onSubmit()">Enquire</button>
+                    </div>
+                </form>
+            </div>
+            <div>
+                <h4>
+                    <mat-icon>phone</mat-icon> Phone Number : 9901441203</h4>
+                <h4>
+                    <mat-icon>email</mat-icon>E-MailId : hrkavya1915@gmail.com</h4>
+            </div>
+        </div>
+    </section>
+</main>

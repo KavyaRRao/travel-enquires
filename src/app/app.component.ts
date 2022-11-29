@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'travel-website';
+
+  currentTab = 'about-us';
+  
+  constructor( private router : Router) {
+
+  }
+
+  navToHome() {
+    this.router.navigate(['./']);
+  }
+
+  setCurrentTab(currentTab: string) {
+    this.currentTab = currentTab;
+  }
 }
